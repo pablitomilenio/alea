@@ -5,3 +5,20 @@ body {
 h1 {
     color: red;
 }
+
+#logsq {
+    background-color: lightblue;
+    width: 300px;
+}
+#lgoutsq {
+    background-color: darkred;
+    color:white;
+    width: 300px;
+    height: 100px;
+    vertical-align: middle;
+    text-align: center;
+}
+#usersq {
+    background-color: cyan;
+    width: 300px;
+}
