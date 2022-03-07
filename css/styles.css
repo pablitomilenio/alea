@@ -22,3 +22,15 @@ h1 {
     background-color: cyan;
     width: 300px;
 }
+#maintbl {
+    background-color: yellow;
+    width: 300px;
+    border: solid 1px blue;
+}
+
+#err404 {
+    background-color: crimson;
+    color:white;
+    border-radius: 3px;
+    font-size:20px;
+}

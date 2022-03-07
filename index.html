@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
@@ -16,16 +17,38 @@
         <p>password: <input type="password" id="loginpwd"></input></p>
         <p><button onClick="doLogin()">Login!</button></p>
     </div>
+
+    <p>
+        <button id="err404" onclick="user23()">
+            Open the 404 Error with User23
+        </button>
+    </p>
+
     <div id="usersq"">
         <p>Create a new user:</p>
-        <p>email: <input type="text" id="usremail"></input></p>
-        <p>first name: <input type="text"  id="usrfname"></input></p>
-        <p>last name: <input type="text"  id="usrlname"></input></p>
+        <p>email: <input type=" text" id="usremail"></input></p>
+        <p>first name: <input type="text" id="usrfname"></input></p>
+        <p>last name: <input type="text" id="usrlname"></input></p>
         <p><button onclick="createUser()">Create!</button></p>
     </div>
     <div id="lgoutsq"">
     <br>
-        <p><button onClick="doLogout()">Logout! :(</button></p>
+        <p><button onClick=" doLogout()">Logout! :(</button></p>
+    </div>
+
+    <div id="usrtbl">
+        <p>List of users: <button onclick="page--;listUsers()"><</button>
+                          <button onclick="page++;listUsers()">></button> users per page:
+                    <select name="perpage" id="perpage" onchange="listUsers()">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                    </select>
+        </p>
+        <table id="maintbl">
+
+        </table>
     </div>
 
 </body>
